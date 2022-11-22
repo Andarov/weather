@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-blue': '#183254'
+      },
+      fontFamily: {
+        ubuntu: "'Ubuntu', 'Arial, 'sans-serif'",
+      },
+    },
   },
   plugins: [],
 }
