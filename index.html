@@ -6,11 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
     
+    <!-- Header vs Hero -->
+    <div class="bg-dark-blue">
+        <!-- Header -->
+        <header class="pt-8">
+            <!-- header-container -->
+            <div class="w-full max-w-7xl px-5 mx-auto">
+                <div class="flex flex-wrap justify-center sm:justify-between items-center gap-5">
+                    <a class="text-center sm:text-left text-3xl text-white font-bold" href="index.html">Weather</a>
+
+                    <form id="form" class="flex justify-center space-x-3 sm:justify-end">
+                        <input id="city-input" class="py-2 px-5 rounded-md focus:outline-none" type="search" name="city" id="city" placeholder="Shaxar nomini kiriting">
+                        <button type="submit" class="w-10 h-10 flex justify-center items-center rounded-2xl bg-white">
+                            <i class="text-lg fa-solid fa-magnifying-glass-location"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <div>
+            <!-- hero-container -->
+            <div class="w-full max-w-7xl px-5 mx-auto">
+                <div class="flex justify-center items-center">
+                    <img class="bg-transparent bg-cover" src="./img/weather-icon-png-11063.png" alt="Weather icon" width="500" height="100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="py-8 md:py-16">
+        <!-- Weather info -->
+        <section class="w-full max-w-4xl px-5 mx-auto">
+            <div id="weather-info" class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="py-8 bg-dark-blue">
+        <!-- footer-container -->
+        <div class="w-full max-w-7xl px-5 mx-auto">
+            <div class="flex flex-wrap justify-center items-center">
+                <p class="text-2xl text-white">Created by Andarov</p>
+            </div>
+        </div>
+    </footer>
     
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
